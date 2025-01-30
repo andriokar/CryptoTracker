@@ -11,7 +11,7 @@ data class CoinUi(
     val rank: Int,
     val name: String,
     val symbol: String,
-    val markedCapUsd: DisplayableNumber,
+    val marketCapUsd: DisplayableNumber,
     val priceUsd: DisplayableNumber,
     val changePercent24Hr: DisplayableNumber,
     @DrawableRes val iconRes: Int
@@ -29,7 +29,7 @@ fun Coin.toCoinUi(): CoinUi {
         symbol = symbol,
         rank = rank,
         priceUsd = priceUsd.toDisplayableNumber(),
-        markedCapUsd = markedCapUsd.toDisplayableNumber(),
+        marketCapUsd = marketCapUsd.toDisplayableNumber(),
         changePercent24Hr = changePercent24Hr.toDisplayableNumber(),
         iconRes = getDrawableIdForCoin(symbol = symbol)
     )
