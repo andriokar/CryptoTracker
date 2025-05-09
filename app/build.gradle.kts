@@ -25,7 +25,7 @@ android {
 
     buildTypes {
         debug {
-            buildConfigField("String", "BASE_URL", "\"https://api.coincap.io/v2/\"")
+            buildConfigField("String", "BASE_URL", "\"rest.coincap.io/v3/\"")
         }
         release {
             isMinifyEnabled = false
@@ -35,7 +35,7 @@ android {
             )
 
             debug {
-                buildConfigField("String", "BASE_URL", "\"https://api.coincap.io/v2/\"")
+                buildConfigField("String", "BASE_URL", "\"rest.coincap.io/v3/\"")
             }
         }
     }
